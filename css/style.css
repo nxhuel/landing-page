@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: transparent;
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    padding: 20px 50px;
+    font-size: 35px;
+    text-transform: uppercase;
+    /* color: #fff; */
+    color: black;
+}
+
+.navegacion ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navegacion ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.navegacion ul li a {
+    /* color: #fff; */
+    color: black;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover {
+    background: rgb(215, 213, 213);
+    transition: .5s;
+}
+
+.navegacion-menu {
+    font-size: 30px;
+    /* color: #fff; */
+    color: black;
+    float: right;
+    line-height: 82px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.navegacion-menu i {
+    cursor: pointer;
+
+}
+
+.seccion-contenedor {
+    position: relative;
+    height: 100vh;
+}
+
+.video-contenedor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-contenedor video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+#btn-menu {
+    display: none;
+}
+
+.contenedor-menu {
+    position: absolute;
+    background: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .contenedor-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    float: right;
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateZ(-100%);
+}
+
+#btn-menu:checked ~ .contenedor-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav a{
+    display: block;
+    padding: 20px;
+    margin: 50px 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: #c7c7c7;
+    border-right: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+    border-right: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
