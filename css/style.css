@@ -8,7 +8,7 @@
 
 .header {
     background-color: transparent;
-    height: 80px;
+    height: 100vh;
     width: 100%;
 }
 
@@ -62,8 +62,8 @@ li a.active, li a:hover {
 }
 
 .seccion-contenedor {
-    position: relative;
-    height: 100vh;
+    position: relative; 
+    height: 100%; 
 }
 
 .video-contenedor {
@@ -145,4 +145,7 @@ li a.active, li a:hover {
     color: #fff;
     cursor: pointer;
     font-size: 18px;
+}
+
+.contenedor-frase {
 }
