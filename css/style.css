@@ -257,7 +257,7 @@ a, a:link, button:link {
     font-size: 3.1359vw;
 }
 
-.info .imagen .imagen-btn {
+.info .imagen .imagen-btn{
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -337,4 +337,30 @@ a, a:link, button:link {
 .info button a {
     cursor: pointer;
     color: black;
+}
+
+.video {
+    display: block;
+    position: relative;
+    height: 84.5993vw;
+    overflow: hidden;
+    background-color: rgb(18, 18, 18);
+}
+
+.video .video-header {
+    margin-bottom: 10.3833vw;
+    padding-top: 4.1812vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.video .video-header .video-titulo-grande {
+    margin-bottom: 2.7875vw;
+    font-size: 9.7561vw;
+    line-height: 9.7561vw;
+}
+
+.video .video-header .video-titulo-mini {
+    font-size: 1.8118vw;
+    line-height: 2.23vw;
 }
