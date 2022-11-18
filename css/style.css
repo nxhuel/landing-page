@@ -418,6 +418,10 @@ a, a:link, button:link {
     background-color: transparent;
 }
 
+.sede-tour a {
+    color: rgba(255, 255, 255);
+}
+
 button {
     cursor: pointer;
 }
@@ -500,7 +504,6 @@ button {
     position: absolute;
     top: 22px;
     right: 50px;
-    font-size: 0px;
 }
 
 .footer-boton button:first-of-type {
@@ -512,8 +515,8 @@ button {
     display: inline-block;
     width: 44px;
     height: 44px;
-    border: 0px;
-    font-size: 0px;
+    border-radius: 50px; 
+    font-size: 26px;
     background-repeat: no-repeat;
     background-size: 44px;
 }
@@ -521,4 +524,18 @@ button {
 button {
     cursor: pointer;
     background-color: inherit;
+}
+
+button a {
+    color: black;
+}
+
+/* .footer-boton button a:hover {
+    filter: blur(2px);
+} */
+
+.footer-boton button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none; 
 }
