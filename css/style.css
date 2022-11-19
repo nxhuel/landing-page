@@ -361,6 +361,46 @@ a, a:link, button:link {
     line-height: 2.23vw;
 }
 
+#contenedor-carrusel {
+    border: 5px solid  wheat;
+    height: 200px;
+    overflow: hidden;
+}
+
+.video-carrusel {
+    border: 1px solid white;
+    width: 100%;
+    /* height: calc(100% - 33.8676vw);  */
+    height: 100%;
+    position: relative;
+}
+
+.tarjeta-carrusel {
+    height: 100%;
+}
+
+.flecha-carrusel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#tarjeta-carrusel-1 {
+    background-color: rgb(176, 105, 243) ;
+}
+
+#tarjeta-carrusel-2 {
+    background-color: rgb(72, 114, 237) ;
+}
+#tarjeta-carrusel-3 {
+    background-color: rgb(139, 243, 105) ;
+}
+
 .contenedor-sede {
     height: 746px;
 }
