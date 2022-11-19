@@ -362,15 +362,12 @@ a, a:link, button:link {
 }
 
 #contenedor-carrusel {
-    border: 5px solid  wheat;
-    height: 200px;
+    height: 90vh;
     overflow: hidden;
 }
 
 .video-carrusel {
-    border: 1px solid white;
     width: 100%;
-    /* height: calc(100% - 33.8676vw);  */
     height: 100%;
     position: relative;
 }
@@ -390,15 +387,24 @@ a, a:link, button:link {
     padding: 20px;
 }
 
-#tarjeta-carrusel-1 {
-    background-color: rgb(176, 105, 243) ;
+.flecha-carrusel i {
+    color: rgb(255, 255, 255);
 }
 
-#tarjeta-carrusel-2 {
-    background-color: rgb(72, 114, 237) ;
+.conte-puntos {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
 }
-#tarjeta-carrusel-3 {
-    background-color: rgb(139, 243, 105) ;
+
+.conte-puntos a {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+
+.tarjeta-carrusel video {
+    width: 100%;
+    height: 100%;
 }
 
 .contenedor-sede {
