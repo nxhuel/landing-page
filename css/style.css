@@ -57,23 +57,13 @@ header video {
 
 .menu li {
     margin: 10px;
-
 }
 
 .menu li a{
     color: #000;
-    font-weight: bold;
     transition: all 0.5 ease;
     font-size: 18px;
     text-transform: uppercase;
-}
-
-.menu li i {
-    color: #000;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.5 ease;
-    cursor: pointer;
 }
 
 .menu li a:hover {
@@ -83,18 +73,84 @@ header video {
     border-radius: 3px;
 }
 
-.menu li i:hover {
+.menu i:hover {
     padding: 1px 2px;
     background: rgb(215, 213, 213);
     color: #000;
     border-radius: 3px;
 }
 
+.nav label i {
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.hamburguesa__contenedor {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburguesa__menu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background: #000;
+    width: 20%;
+    right: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+}
+
+.hamburguesa__item {
+    color: #fff;
+    --clippy: polygon(100% 1%, 100% 0, 100% 100%, 100% 100%);
+}
+
+.hamburguesa__item::after {
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+
+.hamburguesa__item:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.hamburguesa__input:checked + .hamburguesa__menu {
+    clip-path: circle(100% at center)
+}
+
+.hamburguesa__input {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburguesa__label {
+    display: block;
+    cursor: pointer;
+}
+
 .scrol {
     height: 100px;
 }
 
-#btn-menu {
+/* #btn-menu {
     display: none;
 }
 
@@ -153,7 +209,7 @@ header video {
     color: #fff;
     cursor: pointer;
     font-size: 18px;
-}
+} */
 
 .contenedor-frase {
     position: relative;
