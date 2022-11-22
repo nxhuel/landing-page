@@ -6,84 +6,92 @@
     box-sizing: border-box;
 }
 
-.header {
-    background-color: transparent;
-    height: 100vh;
+header {
     width: 100%;
-}
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    z-index: 9;
+} 
 
-.logo {
-    position: absolute;
-    padding: 20px 50px;
-    font-size: 35px;
-    text-transform: uppercase;
-    /* color: #fff; */
-    color: black;
-}
 
-.navegacion ul {
-    float: right;
-    margin-right: 20px;
-}
-
-.navegacion ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-.navegacion ul li a {
-    /* color: #fff; */
-    color: black;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-li a.active, li a:hover {
-    background: rgb(215, 213, 213);
-    transition: .5s;
-}
-
-.navegacion-menu {
-    font-size: 30px;
-    /* color: #fff; */
-    color: black;
-    float: right;
-    line-height: 82px;
-    margin-right: 30px;
-    cursor: pointer;
-}
-
-.navegacion-menu i {
-    cursor: pointer;
-
-}
-
-.seccion-contenedor {
-    position: relative; 
-    height: 100%; 
-}
-
-.video-contenedor {
+header video {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    object-fit: cover;
 }
 
-.video-contenedor video {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
+.nav {
+    position: fixed;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+}
+
+.nav.active {
+    background: #fff;
+    padding: 15px;
+}
+
+.nav.active .logo,
+.nav.active a {
+    color: #000;
+}
+
+.logo {
+    font-size: 35px;
+    color: #000;
+    font-weight: 100;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin: 10px;
+
+}
+
+.menu li a{
+    color: #000;
+    font-weight: bold;
+    transition: all 0.5 ease;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.menu li i {
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.5 ease;
+    cursor: pointer;
+}
+
+.menu li a:hover {
+    padding: 5px 10px;
+    background: rgb(215, 213, 213);
+    color: #000;
+    border-radius: 3px;
+}
+
+.menu li i:hover {
+    padding: 1px 2px;
+    background: rgb(215, 213, 213);
+    color: #000;
+    border-radius: 3px;
+}
+
+.scrol {
+    height: 100px;
 }
 
 #btn-menu {
