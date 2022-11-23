@@ -610,10 +610,16 @@ button a {
         box-sizing: border-box;
     }
 
+    .logo {
+        font-size: 25px;
+        color: #000;
+        font-weight: 100;
+    }
+
     .menu li a{
         color: #000;
         transition: all 0.5 ease;
-        font-size: 15px;
+        font-size: 8px;
         text-transform: uppercase;
     }
 }
