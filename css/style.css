@@ -609,4 +609,11 @@ button a {
         list-style: none;
         box-sizing: border-box;
     }
+
+    .menu li a{
+        color: #000;
+        transition: all 0.5 ease;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
 }
