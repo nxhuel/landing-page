@@ -622,4 +622,164 @@ button a {
         font-size: 8px;
         text-transform: uppercase;
     }
+
+    .hamburguesa__menu {
+        position: fixed;
+        top: 72px;
+        bottom: 0;
+        background: inherit;
+        background: #000;
+        width: 40%;
+        right: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .caja-frase p {
+        font-size: 45px;
+        line-height: 55px;
+        text-transform: uppercase;
+    }
+
+    .caja-frase p.titulo {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 15px;
+        font-size: 48px;
+        line-height: 125px;
+    }
+
+    .info .imagen:first-of-type {
+        border-right: none;
+    }
+
+    .info .imagen {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        perspective: 1px;
+        overflow: hidden;
+    }
+
+    .info .imagen .imagen-btn {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        bottom: 7.2474vw;
+        border: 0px;
+        border-radius: 1.3937vw;
+        padding: 0.8362vw 1.115vw;
+        font-size: 0.9756vw;
+        line-height: 1.115vw;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        transition: all 0.4s ease 0s;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .info button {
+        width: 100%;
+        height: 100%;
+        padding: 48px 0px;
+        border: 0px;
+        font-size: 155%;
+        line-height: 28px;
+        text-align: center;
+        background-color: rgb(255, 71, 59);
+        color: rgb(0, 0, 0);
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .video .video-header .video-titulo-mini {
+        font-size: 100%;
+        line-height: 2.23vw;
+    }
+
+    #contenedor-carrusel {
+        height: 53%;
+        overflow: hidden;
+    }
+
+    .flecha-carrusel {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 180%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .sede img {
+        position: relative;
+        width: 100%;
+        height: 746px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .sede-texto {
+        position: absolute;
+        left: 30px;
+        bottom: 72px;
+        z-index: 10;
+    }
+
+    .sede-titulo {
+        margin-bottom: 50%;
+        font-size: 30px;
+        line-height: 40px;
+        color: rgb(255, 255, 255);
+    }
+
+    .footer-caja {
+        position: relative;
+        height: 88px;
+        padding: 33px 5px;
+        border-top: 1px solid rgb(18, 18, 18);
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+
+    .footer-copyright {
+        display: inline-block;
+        margin-right: 30px;
+        font-size: 10px;
+    }
+
+    .footer-link button {
+        display: inline-block;
+        margin-right: 18px;
+        border: 0px;
+        font-size: 10px;
+    }
+
+    .footer-boton {
+        position: absolute;
+        top: 22px;
+        left: 64%;
+    }
+
+    .footer-boton button {
+        display: inline-block;
+        width: 44px;
+        height: 30px;
+        border-radius: 50px;
+        font-size: 20px;
+        background-repeat: no-repeat;
+        background-size: 44px;
+    }    
 }
