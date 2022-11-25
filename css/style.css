@@ -670,12 +670,11 @@ button a {
         -webkit-box-align: center;
         align-items: center;
         position: absolute;
-        left: 50%;
+        left: 94%;
         bottom: 7.2474vw;
         border: 0px;
         border-radius: 1.3937vw;
-        padding: 0.8362vw 1.115vw;
-        font-size: 0.9756vw;
+        font-size: 5px;
         line-height: 1.115vw;
         background-color: transparent;
         color: rgb(255, 255, 255);
