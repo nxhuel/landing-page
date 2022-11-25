@@ -441,7 +441,7 @@ a, a:link, button:link {
 
 .sede-texto {
     position: absolute;
-    left: 50px;
+    left: 3%;
     bottom: 72px;
     z-index: 10;
 }
